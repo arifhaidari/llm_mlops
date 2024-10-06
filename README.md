@@ -16,3 +16,10 @@ table of Content:
 
 the content goes here
 Mlflow is library-agnostic
+
+integrate mysql or sqlite for backend and mlflow to store metrics
+
+for storing the artifacts I will use the S3 in production and local storage in the start
+
+to run mlflow for the first time:
+mlflow server --backend-store-uri sqlite:///metrics_store/mlflow.db --default-artifact-root /Users/arifmoazy/AI/Gen_AI/llm_mlops/artifact_store --host 0.0.0.0 --port 5000
