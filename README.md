@@ -31,3 +31,5 @@ mlflow.pytorch.log_model(model, "transformer_model")
 I needed to install:
 pip install torch torchvision torchaudio
 since I am using macbook
+
+Training models with MLFLOW:
