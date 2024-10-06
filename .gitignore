@@ -1,1 +1,8 @@
+# folders
+mlruns/
+artifact_store/
+
+
+# files
 mlflow.db
+confusion_matrix.html
