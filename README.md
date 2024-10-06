@@ -23,3 +23,11 @@ for storing the artifacts I will use the S3 in production and local storage in t
 
 to run mlflow for the first time:
 mlflow server --backend-store-uri sqlite:///metrics_store/mlflow.db --default-artifact-root /Users/arifmoazy/AI/Gen_AI/llm_mlops/artifact_store --host 0.0.0.0 --port 5000
+
+I did install the transformers and pytorch
+but for doing:
+Log the model in MLflow
+mlflow.pytorch.log_model(model, "transformer_model")
+I needed to install:
+pip install torch torchvision torchaudio
+since I am using macbook

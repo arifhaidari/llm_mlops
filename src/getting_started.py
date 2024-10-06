@@ -34,7 +34,7 @@ for t in range(100):
     metric_value = np.sin(t * np.pi / 50)
     mlflow.log_metric("time_series_metric", metric_value, step=t)
 
-
+# =================
 # Logging datasets
 with open("data/dataset.csv", "w") as f:
      f.write("x,y\n")
@@ -42,6 +42,8 @@ with open("data/dataset.csv", "w") as f:
           f.write(f"{x},{x * 2}\n")
 
 mlflow.log_artifact("data/dataset.csv", "data")
+
+# =================
 
 # saving different types of artifacts
 
@@ -66,6 +68,16 @@ fig.write_html(html_file)
 
 # Log the HTML file with MLflow
 mlflow.log_artifact(html_file)
+
+# ===================
+# Logging models 
+from transformers import AutoModelForSeq2SeqLM
+
+# Initialize a model from Hugging Face Transformers
+model = AutoModelForSeq2SeqLM.from_pretrained("TheFuzzyScientist/T5-base_Amazon-product-reviews")
+
+# Log the model in MLflow
+mlflow.pytorch.log_model(model, "transformer_model")
 
 
 # code ends here
