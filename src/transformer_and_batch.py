@@ -1,6 +1,6 @@
 """
 Note:
-some parts of your code are related to GPT-2 architecture, specifically when using 
+some parts of the code are related to GPT-2 architecture, specifically when using 
 causal language models (CLMs) - which are both the model and tokenizer:
 
 model = AutoModelForCausalLM.from_pretrained("TheFuzzyScientist/diabloGPT_open-instruct").to("cuda")

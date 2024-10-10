@@ -36,3 +36,8 @@ Training models with MLFLOW:
 train a News classification and categorisation with transformers
 
 Creating batches dynamically to tokenize (transformers)
+
+batch with sorting
+
+Disclaimer:
+part of this code is inspired by different sources such as tutorials, stackoverflow, udemy, Medium and github. the credit of it goes to respective source. the purpose of these gathering was learning, reference and practice purposes.
