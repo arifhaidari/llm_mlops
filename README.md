@@ -39,5 +39,9 @@ Creating batches dynamically to tokenize (transformers)
 
 batch with sorting
 
+quantization for model efficiency:
+used CTranslate2, it does a lot of quantization technique (add more details in this part)
+using this we can structure the weight of the model to be effiently used by different logical flow during inference.
+
 Disclaimer:
 part of this code is inspired by different sources such as tutorials, stackoverflow, udemy, Medium and github. the credit of it goes to respective source. the purpose of these gathering was learning, reference and practice purposes.
