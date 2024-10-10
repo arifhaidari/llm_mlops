@@ -1,3 +1,17 @@
+"""
+Note:
+some parts of your code are related to GPT-2 architecture, specifically when using 
+causal language models (CLMs) - which are both the model and tokenizer:
+
+model = AutoModelForCausalLM.from_pretrained("TheFuzzyScientist/diabloGPT_open-instruct").to("cuda")
+tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium", padding_side="left")
+
+the tokenizer and model in your code (specifically the "DialoGPT-medium" tokenizer and the 
+AutoModelForCausalLM setup) are fine-tuned versions of GPT-2, designed for generating coherent 
+text sequences based on previous inputs.
+
+"""
+
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from datasets import load_dataset
 import torch
@@ -79,6 +93,9 @@ generator = dynamic_batching(dataset["instruction"][:40].tolist() * 1000, 3200)
 from contextlib import contextmanager
 import time
 
+
+# =============
+# Batch Sorting and tracking the time
 # Context manager to track execution time of code blocks
 @contextmanager
 def track_time():
