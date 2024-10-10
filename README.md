@@ -1,4 +1,4 @@
-# LLM with MLOPs
+# LLM with MLOPs (Under Development)
 
 in this project I will build the model and then use all the MLOPs methods and tools to deploy and scale the model.
 
@@ -33,3 +33,6 @@ pip install torch torchvision torchaudio
 since I am using macbook
 
 Training models with MLFLOW:
+train a News classification and categorisation with transformers
+
+Creating batches dynamically to tokenize (transformers)

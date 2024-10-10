@@ -79,6 +79,7 @@ model = AutoModelForSeq2SeqLM.from_pretrained("TheFuzzyScientist/T5-base_Amazon-
 # Log the model in MLflow
 mlflow.pytorch.log_model(model, "transformer_model")
 
+mlflow.end_run()
 
 # code ends here
 print('end of the code')
