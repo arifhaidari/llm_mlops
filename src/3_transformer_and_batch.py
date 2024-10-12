@@ -50,8 +50,8 @@ def batch_generate_texts(prompts):
 # Testing batch generation with different batch sizes
 batch_generate_texts(dataset["instruction"][:1].tolist())  # Generate for the first prompt
 batch_generate_texts(dataset["instruction"][:20].tolist())  # Generate for the first 20 prompts
-batch_generate_texts(dataset["instruction"][:100].tolist())  # Generate for the first 100 prompts
-batch_generate_texts(dataset["instruction"][:200].tolist())  # Generate for the first 200 prompts
+batch_generate_texts(dataset["instruction"][:100].tolist())  
+batch_generate_texts(dataset["instruction"][:200].tolist())  
 # batch_generate_texts(dataset["instruction"].sample(200).tolist()) # This might crash due to memory overload
 
 # Dynamic batching function to handle generation based on token size limits

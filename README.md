@@ -43,5 +43,19 @@ quantization for model efficiency:
 used CTranslate2, it does a lot of quantization technique (add more details in this part)
 using this we can structure the weight of the model to be effiently used by different logical flow during inference.
 
+LORA:
+it is very good to customize the pre-trained models and preserve the knowledge and train with the new knowledge.
+
+transformers with pipelines, without pipelines and with ctranslate's generator
+
+transformers with optimisation and VLLM
+
+deploying on distributed system:
+using the RabbitMQ message broker and install it on different system.
+the interaction with rabbitmq server would be done with pika
+
+scaling up the deployment using Ray:
+scaling from a single machine to a large cluster effectively.
+
 Disclaimer:
 part of this code is inspired by different sources such as tutorials, stackoverflow, udemy, Medium and github. the credit of it goes to respective source. the purpose of these gathering was learning, reference and practice purposes.

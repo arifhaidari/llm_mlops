@@ -1,1 +1,3 @@
 ctranslate2==1.20.1
+pika
+ray[default]
