@@ -22,7 +22,7 @@ messages = [
         "role": "system",  
         "content": "You are a friendly chatbot who is always helpful.",  
     },
-    {"role": "user", "content": "How can I get rid of a llama on my lawn?"},
+    {"role": "user", "content": "How can I fix my car's break?"},
 ]
 
 # Format the conversation as a prompt using the tokenizer's chat template.
