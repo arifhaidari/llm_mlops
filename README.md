@@ -1,4 +1,4 @@
-# LLM with MLOPs (Under Development)
+# LLM and Transformers with MLOPs (Under Development)
 
 in this project I will build the model and then use all the MLOPs methods and tools to deploy and scale the model.
 
@@ -45,6 +45,9 @@ using this we can structure the weight of the model to be effiently used by diff
 
 LORA:
 it is very good to customize the pre-trained models and preserve the knowledge and train with the new knowledge.
+
+transformers:
+add more information and explain for transformers
 
 transformers with pipelines, without pipelines and with ctranslate's generator
 
