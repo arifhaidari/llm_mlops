@@ -63,21 +63,34 @@ print(results[1000])
 Imported Packages and Their Role in Improving Performance:
 vLLM (from vllm):
 
-vLLM is a high-performance inference library designed specifically for large language models. It optimizes the execution of transformer models by:
-Memory management optimization: vLLM uses techniques such as continuous batching and lazy weight loading to efficiently handle large batches of inputs.
-Efficient GPU utilization: vLLM is highly optimized for GPU usage, which significantly improves both latency and throughput.
-Latency: vLLM minimizes the time required to generate responses by leveraging fast token generation techniques.
-Throughput: vLLM can handle larger batches of prompts more efficiently, leading to a throughput of 68.22 inputs/second, which is a substantial improvement over other frameworks like ctranslate2.
+vLLM is a high-performance inference library designed specifically for large language models. 
+It optimizes the execution of transformer models by:
+Memory management optimization: vLLM uses techniques such as continuous batching and lazy weight 
+loading to efficiently handle large batches of inputs.
+Efficient GPU utilization: vLLM is highly optimized for GPU usage, 
+which significantly improves both latency and throughput.
+Latency: vLLM minimizes the time required to generate responses by leveraging fast 
+token generation techniques.
+Throughput: vLLM can handle larger batches of prompts more efficiently, leading to a 
+throughput of 68.22 inputs/second, which is a substantial improvement over other 
+frameworks like ctranslate2.
 SamplingParams (from vllm):
 
-Defines the parameters that control the generation of text (e.g., token count, randomness). This allows precise control over how text is generated, impacting both performance and output quality.
+Defines the parameters that control the generation of text (e.g., token count, randomness). 
+This allows precise control over how text is generated, impacting both performance and output quality.
 track_time (from llm_mlops.utils):
 
-This utility function measures the execution time (latency) of the model. It is helpful in performance evaluation and benchmarking when comparing different models or configurations.
+This utility function measures the execution time (latency) of the model. 
+It is helpful in performance evaluation and benchmarking when comparing different models or configurations.
 How vLLM Improved Latency and Throughput:
-Optimized Memory Management: vLLM reduces the amount of memory required by efficiently loading and offloading model weights during inference.
-Efficient Batching: It processes larger batches of inputs simultaneously, resulting in significantly higher throughput (68.22 inputs/second).
-GPU Acceleration: By using GPU-based execution, vLLM minimizes latency, achieving a 0.704-second inference time for 1024 inputs.
-Parallel Execution: vLLM utilizes multi-threaded execution and parallelism to distribute the work efficiently across available GPU resources.
-This combination of optimizations in vLLM allows it to outperform other frameworks like ctranslate2 by almost doubling throughput and improving latency.
+Optimized Memory Management: vLLM reduces the amount of memory required by efficiently 
+loading and offloading model weights during inference.
+Efficient Batching: It processes larger batches of inputs simultaneously, 
+resulting in significantly higher throughput (68.22 inputs/second).
+GPU Acceleration: By using GPU-based execution, vLLM minimizes latency, 
+achieving a 0.704-second inference time for 1024 inputs.
+Parallel Execution: vLLM utilizes multi-threaded execution and parallelism to 
+distribute the work efficiently across available GPU resources.
+This combination of optimizations in vLLM allows it to outperform other frameworks 
+like ctranslate2 by almost doubling throughput and improving latency.
 """
